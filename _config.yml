@@ -5,7 +5,7 @@ collections:
   blog:
     title: Blog
     output: true
-  performances:
+  performance:
     title: Performance
     output: true
   projects:
