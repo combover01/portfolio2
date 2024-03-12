@@ -2,6 +2,7 @@
 title: Projects
 date: 2024-03-12 05:21:00 Z
 Field name: 
+layout: page
 ---
 
 # Welcome to my projects page!
@@ -9,9 +10,5 @@ Field name:
 ## Brain music
 
 * ### **BioSignal Max External Library**
-
-
 * ### **Performance practice**
-
-
 * ### **Ideas**
