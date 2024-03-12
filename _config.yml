@@ -5,6 +5,9 @@ collections:
   blog:
     title: Blog
     output: true
+  externals:
+    title: Externals
+    output: true
   performance:
     title: Performance
     output: true
