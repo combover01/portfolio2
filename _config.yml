@@ -5,6 +5,12 @@ collections:
   blog:
     title: Blog
     output: true
+  performances:
+    title: Performance
+    output: true
+  projects:
+    title: Projects
+    output: true
   uploads:
     title: Uploads
     output: true
