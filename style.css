@@ -1,0 +1,48 @@
+html{
+    font-family:"Monaco";
+    margin:1%;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.header{
+    font-size:x-large;
+}
+.subheader{
+    font-size: large;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    gap:10vh;
+    padding-bottom: 2%;
+
+    /* text settings */
+    a{
+        text-decoration: none;
+    }
+}
+.nav-spacer{
+    flex: 10;
+}
+.nav-item{
+    flex: 1;
+    justify-items: space-around;
+
+    /* transition: all 0.4s ease; */
+}
+/* .nav-item:hover{ */
+    /* flex-basis: 50%; */
+    /* flex-grow: 0; */
+/* } */
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}

@@ -1,23 +1,25 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Mir's Portfolio </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="header.js"></script>
+    </head>
+  <body>
 
-<div class="home">
+    <div id="header-placeholder"></div>
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="page-content">
+      Hi, I'm Mir Jeffres! Welcome to my website. I am a saxophonist, experimental electronic musician, and a master’s student in the Center for Music Technology at Georgia Tech. 
+      In May 2023, I graduated from Georgia Tech with an undergraduate degree majoring in Music Technology, concentrating in Electrical Engineering, and minoring in Physics.
+      I am a leader in the Atlanta music community. I teach live sound in various student groups and am involved in several local bands including Two Factor Authentication and Lash. 
+      This is my fifth and final year in the GT Music Technology program after being involved with research in interactive performance systems as part of the Brain Music Lab, Robotic Musicianship Lab, and now the IMPACT Lab with Dr. Alexandria Smith. 
+      My current research focus is on new interfaces for live music performance, specifically making it easier to use biosignals like EEG to support acoustic/electronic performance. 
+      I am developing a Max external library for biosignal processing to improve accessibility of brain music for computer musicians of all skill levels. 
+      This library is used in my own brain music performance practice centered around biofeedback and meditation to augment solo saxophone improvisation. 
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <br>See the nav bar above to look at my projects or brain music hardware/software documentation, and <a href="https://mirjeffres.substack.com/">click here</a> to subscribe to my email list and get updates on my Max externals and open-source EEG hardware!
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    </div>
+  </body>
+</html>
