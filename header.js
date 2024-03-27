@@ -1,19 +1,10 @@
 
+const baseURL = window.location.origin;
+let headerURL;
+headerURL = baseURL + '/header.html';
 
 window.onload = function() {
-  const baseURL = window.location.origin;
-  const currentDirectory = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-  let headerURL;
-  if (currentDirectory === '/') {
-    // If the current page is the base URL, fetch header.html from the root directory
-    headerURL = baseURL + '/header.html';
-  } 
-  else {
-    // If the current page is a subpage, fetch header.html relative to the current page's directory
-    // const currentDirectory = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-    headerURL = baseURL + '/header.html';
-  }
-  
+
   fetch(headerURL)
   .then(response => response.text())
   .then(html => {

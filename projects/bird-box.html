@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Mir's Portfolio </title>
+      <link rel="stylesheet" href="/style.css">
+      <script src="/header.js"></script>
+    </head>
+  <body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="page-content">
+        <b>Communication via Sound with Bird-Like Autonomous Agents</b>
+        <br>Group project members: Mir Jeffres and Mason Mann
+        <br>
+        Code repository: <a href="https://github.com/masonandrewmann/birds_proj">https://github.com/masonandrewmann/birds_proj</a>
+
+
+        <br><br>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LeYnbbA8mWI?si=rY-stHGv84Suci3z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </center>   
+        The concept of this project was to create a group of autonomous,
+self-contained physical objects that could sing to each other and
+hear each other singing and respond according to computational al-
+gorithms. The idea was that simple behavior could be programmed
+into each agent and that together, complex group behavior would
+arise. Agents would switch between a state where they are listening,
+and another state where they respond. During the listening state
+they would determine the loudest note that they heard and use
+that as the input to a first order Markov model. With all the agents
+separately playing single notes from the same Markov model, the
+idea was that the whole group behavior would be similar to that of
+a single entity playing a single Markov-model. We considered this
+to be a sort of “distributed Markov model.” Additionally the average
+loudness that each agent is hearing at any given time will have an
+effect on the way it plays the notes. When the average loudness is
+higher, they will shorten their listening period, playing notes more
+often and moving through the markov model more quickly, and
+they will also play shorter notes creating a frantic feel. Additionally
+there would be a few ways that a user could interact and guide the
+behavior. The primary method of interaction is simply picking up
+the agents and moving them, if they are further apart from each
+other they will not hear each other as loudly, decreasing the av-
+erage loudness and when far enough away, making some agents
+not interact at all. Another way that the users interact is through
+a special agent called the “Leader Bird.” This agent plays a special
+command pitch when a button on it is pressed. All of the follower
+agents have four separate Markov models built on different pitch-
+class sets and they all start on the same one. When an agent hears
+this command pitch they will move to the next pitch-class set. Since
+they might not all hear the command pitch depending on where
+they are placed, they will likely begin to drift into groups playing
+different pitch-class sets moving from a state of consonance in the
+beginning of the piece to a polytonal cloud as time goes on.
+        <br><br>
+        <center>
+                        <iframe src="../_uploads/bird-paper.pdf" width="100%" height="400px"></iframe>
+
+        </center>
+    </div>
+  </body>
+</html>

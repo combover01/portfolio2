@@ -1,48 +1,93 @@
 html{
     font-family:"Monaco";
+}
+html:not(.navbar){
     margin:1%;
     padding-left:2%;
     padding-right:2%;
 }
-
 .header{
     font-size:x-large;
+    min-width: 0;
+}
+.title-area{
+    min-width: 0;
+    justify-self: left;
+    /* margin-left: 4%; */
 }
 .subheader{
     font-size: large;
 }
 .navbar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    /* margin-left: 2%; */
+    grid-template-columns: minmax(auto, 52%) repeat(auto-fit, minmax(10%, auto));
+    gap: 2%;
+    padding-left:1%;
+    padding-right:1%;
     justify-content: space-around;
+    justify-items: center;
     align-items: center;
-    height: 20vh;
-    gap:10vh;
-    padding-bottom: 2%;
-
+    /* align-content: flex-start; */
+    text-align: center;
+    min-height: min(20vmin, 120px);
+    width: 98%;
     /* text settings */
     a{
         text-decoration: none;
     }
+    box-shadow:inset 0 -0.5em 3em rgb(0 200 0 / 30%);
 }
-.nav-spacer{
-    flex: 10;
+.nav-item:hover{
+    color:blue;
 }
-.nav-item{
-    flex: 1;
-    justify-items: space-around;
+.rotate-image{
+    /* transform: rotate(90deg); */
+    position:relative;
+}
+.homepage-container{
+    display:grid;
+    grid-template-columns: 64% 34%;
+    grid-gap: 2%;
+}
 
-    /* transition: all 0.4s ease; */
-}
-/* .nav-item:hover{ */
-    /* flex-basis: 50%; */
-    /* flex-grow: 0; */
-/* } */
-.navbar-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
+/* 520px is the cutoff!! */
+@media (max-width: 520px){
+    .navbar{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: repeat(auto-fit, minmax(10%, auto));
+        gap: 2%;
+        padding-left:1%;
+        padding-right:1%;
+        width: 98%;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        /* align-content: flex-start; */
+        text-align: center;
+        min-height: min(20vmin, 120px);
+        width: 100%;
+        /* text settings */
+        a{
+            text-decoration: none;
+        }
+        box-shadow:inset 0 -0.5em 3em rgb(200 200 0 / 30%);
+    }
+    .title-area{
+        /* display:none; */
+        grid-row-start: 1;
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }   
+    .header{
+        font-size: small;
+    }
+    .item{
+        grid-row-start: 2;
+    }
+    .homepage-container{
+        display:block;
+    }
 }

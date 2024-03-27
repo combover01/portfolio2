@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Mir's Portfolio </title>
+      <link rel="stylesheet" href="/style.css">
+      <script src="/header.js"></script>
+    </head>
+  <body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="page-content">
+        <b>Text-based Guitar Amp Emulator VST</b>
+        <br>Group project members: Mir Jeffres, Shan Jiang, Vedant Kalbag, Jocelyn Kavanagh, and Thiago Roque
+        <br>Code repository and installation instructions: <a href="https://github.com/jocekav/MUSI6106-Project">https://github.com/jocekav/MUSI6106-Project</a>
+    <br><br>
+    We made a JUCE amp simulator plugin with tone control and other basic effects in a signal chain. 
+    The plugin's idea was based on the work from SmartGuitarAmp by GuitarML on GitHub <a href="https://github.com/GuitarML/SmartGuitarAmp">(https://github.com/GuitarML/SmartGuitarAmp)</a>, and we modified it by introducing the idea of using our description-based parameter setting for the amp and other effects. 
+    We kept the idea of using a machine-trained model of an amp simulator as in SmartGuitarAmp, and used waveshaping as a valve simulator, PedalNetRT, and other basic guitar amp simulation algorithms to create the amp tone control. 
+    Our end goal was to have an amp simulator with a few built-in amps and 4-5 effects (could include reverb, LPF, HPF, comb filters, flanger, chorus, and distortion effects) that are easy to control similarly to a real guitar amp.
+    
+    The plugin has an intuitive GUI where users can type in words to determine the preset tone of the amp as well as manually adjust parameters and effects. 
+    The words were chosen from a variety of guitar forums online, including <a href="https://www.seymourduncan.com/blog/latest-updates/dictionary-of-tone-terms">this one</a>, and we manually set the parameter defaults for each word. Multiple words would create a blend between the two presets.
+    The plugin is targeted at guitar players who want to record into a DAW with the sound of their ideal amps, and is especially useful for an artist on the go. 
+    It is easier to use than other amp simulators, as you either get less choice in tone or too many controls with standard amp simulation plugins. Our plugin gets straight to the tone you want, no fuss.
+<br><br>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o_gP2heUxe4?si=4iNKubTUUzZVmeIt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="../_uploads/amp-sim-slides.pdf" width="100%" height="400px"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmrREnL3qro?si=cCJFWEG__G6RTswC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+    </div>
+  </body>
+</html>
