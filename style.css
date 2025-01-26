@@ -1,5 +1,6 @@
 html{
     font-family:"Monaco";
+    font-family:monospace, monospace;
 }
 html:not(.navbar){
     margin:1%;
